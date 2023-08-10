@@ -1,0 +1,15 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "offhand": {
+          "items": [
+            "minecraft:enchanted_book"
+          ],
+          "tag": "minecraft:tome_of_regeneration"
+        }
+      }
+    }
+  }
+  
