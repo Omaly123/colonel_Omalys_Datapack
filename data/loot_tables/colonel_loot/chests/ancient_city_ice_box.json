@@ -1,0 +1,273 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"To throw a flaming ball you must absorb the flame of what is below"}],
+          "title":"Fireball",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"The great brother of the fireball \nSend a barrage of flames upon your enemy"}],
+          "title":"Firebarrage",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"\"I'm Jesus!\""}],
+          "title":"Frostwalker",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"The Sky's the limit \nUNless you're too heavy of course"}],
+          "title":"Levitation",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"This book contains the power of the creator himself"}],
+          "title":"Notch",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"This Spell amplifies the natural Healing abilities of the body"}],
+          "title":"Regeneration",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"Become as light as what you hold in your hand"}],
+          "title":"Slowfall",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"Run Forest, run"}],
+          "title":"Speed",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"Let's you smell for riches"}],
+          "title":"Xray",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 30
+        }
+      ],
+      "rolls": {
+        "min": 1,
+        "max": 3
+      }
+    },
+
+
+
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "effects": [
+                {
+                  "type": "minecraft:night_vision",
+                  "duration": {
+                    "type": "minecraft:uniform",
+                    "max": 10.0,
+                    "min": 7.0
+                  }
+                },
+                {
+                  "type": "minecraft:blindness",
+                  "duration": {
+                    "type": "minecraft:uniform",
+                    "max": 7.0,
+                    "min": 5.0
+                  }
+                }
+              ],
+              "function": "minecraft:set_stew_effect"
+            },
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 6.0,
+                "min": 2.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:suspicious_stew"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 10.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:golden_carrot"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 10.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:baked_potato"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 6.0,
+                "min": 2.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:packed_ice",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 6.0,
+                "min": 2.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:snowball",
+          "weight": 4
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 10.0,
+        "min": 4.0
+      }
+    }
+  ]
+}

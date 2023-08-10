@@ -1,0 +1,261 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"To throw a flaming ball you must absorb the flame of what is below"}],
+          "title":"Fireball",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"The great brother of the fireball \nSend a barrage of flames upon your enemy"}],
+          "title":"Firebarrage",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"\"I'm Jesus!\""}],
+          "title":"Frostwalker",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"The Sky's the limit \nUNless you're too heavy of course"}],
+          "title":"Levitation",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"This book contains the power of the creator himself"}],
+          "title":"Notch",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"This Spell amplifies the natural Healing abilities of the body"}],
+          "title":"Regeneration",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"Become as light as what you hold in your hand"}],
+          "title":"Slowfall",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"Run Forest, run"}],
+          "title":"Speed",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"Let's you smell for riches"}],
+          "title":"Xray",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 30
+        }
+      ],
+      "rolls": 1
+    },
+
+
+
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 4.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:coal",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_axe",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rotten_flesh",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 2.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:wheat",
+          "weight": 10
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 8.0,
+        "min": 2.0
+      }
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_chestplate"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
+          "name": "minecraft:fishing_rod",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "decoration": "red_x",
+              "function": "minecraft:exploration_map",
+              "skip_existing_chunks": false,
+              "zoom": 1
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "filled_map.buried_treasure"
+              }
+            }
+          ],
+          "name": "minecraft:map",
+          "weight": 5
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

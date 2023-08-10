@@ -1,0 +1,221 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:name_tag"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:saddle"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.25,
+                "min": 0.0
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30.0,
+              "treasure": true
+            }
+          ],
+          "name": "minecraft:bow"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.25,
+                "min": 0.0
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30.0,
+              "treasure": true
+            }
+          ],
+          "name": "minecraft:fishing_rod"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30.0,
+              "treasure": true
+            }
+          ],
+          "name": "minecraft:book"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nautilus_shell"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"To throw a flaming ball you must absorb the flame of what is below"}],
+          "title":"Fireball",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"The great brother of the fireball \nSend a barrage of flames upon your enemy"}],
+          "title":"Firebarrage",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"\"I'm Jesus!\""}],
+          "title":"Frostwalker",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"The Sky's the limit \nUNless you're too heavy of course"}],
+          "title":"Levitation",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"This book contains the power of the creator himself"}],
+          "title":"Notch",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"This Spell amplifies the natural Healing abilities of the body"}],
+          "title":"Regeneration",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"Become as light as what you hold in your hand"}],
+          "title":"Slowfall",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"Run Forest, run"}],
+          "title":"Speed",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "pages":[
+            {"text":"Let's you smell for riches"}],
+          "title":"Xray",
+          "display":{"Lore":["spellbook"]},
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "Spellbook"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 30
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}
