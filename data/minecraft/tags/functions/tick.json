@@ -1,5 +1,3 @@
 {
-    "values": [
-    "colonel:tick"
- ]
+  "values": ["colonel:tick", "armor:tick", "weapons:tick", "artifacts:tick"]
 }
