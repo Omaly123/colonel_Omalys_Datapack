@@ -1,0 +1,1 @@
+give @s enchanted_book{CustomModelData:20002,tome_of_slowfall:1b,Enchantments:[{}],StoredEnchantments:[{}]} 1
