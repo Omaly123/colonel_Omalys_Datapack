@@ -1,0 +1,1 @@
+give @s minecraft:carrot_on_a_stick{display:{Name:'{"text":"Zombie Staff"}'},HideFlags:4,Unbreakable:1b,Damage:2,CustomModelData:99001,staff_of_zombie:1b,Enchantments:[{}]} 1
