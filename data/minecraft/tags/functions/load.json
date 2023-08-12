@@ -1,3 +1,3 @@
 {
-  "values": ["colonel:load", "test:load", "weapons:load", "artifacts:load"]
+  "values": ["effects_custom:load", "weapons:load", "artifacts:load"]
 }
