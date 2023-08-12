@@ -11,6 +11,9 @@ scoreboard objectives add lifetime dummy
 ###for giving Mods speacial skills
 scoreboard objectives add isMod dummy
 
+###raycasting
+scoreboard objectives add rc dummy
+
 ###Staff
 scoreboard objectives add staff minecraft.used:minecraft.carrot_on_a_stick
     

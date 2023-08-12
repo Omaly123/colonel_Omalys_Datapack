@@ -1,3 +1,6 @@
 {
-  "values": ["colonel:load", "armor:load", "weapons:load", "artifacts:load"]
+  "values": [
+  "colonel:load",
+  "weapons:load", 
+  "artifacts:load"]
 }
