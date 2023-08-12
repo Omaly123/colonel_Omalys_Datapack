@@ -1,0 +1,2 @@
+execute at @s run execute as @a[limit=1, sort=nearest, distance=..10, gamemode=!spectator] run function effects_custom:pull_homing_missile
+execute at @s run execute as @e[type=!player, limit=1, sort=nearest, distance=..10, predicate=!effects_custom:homing_immune] run function effects_custom:pull_homing_missile

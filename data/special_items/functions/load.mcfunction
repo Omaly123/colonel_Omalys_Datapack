@@ -1,6 +1,4 @@
-tellraw @a {"text": "colonel loaded!", "color": "#139900"}
-
-execute run function colonel:load_classes
+tellraw @a {"text": "weapons loaded!", "color": "#139900"}
 
 ###to add all cooldown scores to all players, when reloading:
 tag @a[tag=enabled] remove enabled
