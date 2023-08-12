@@ -63,14 +63,14 @@ execute as @a[predicate=effects_custom:has_spellbook_slowfall] run effect give @
 
 
 ###Speed
-execute as @a[predicate=effects_custom:has_spellbook_speed, predicate=!colonel:holds_weapon] run effect give @s speed 1 1
+execute as @a[predicate=effects_custom:has_spellbook_speed, predicate=!effects_custom:holds_weapon] run effect give @s speed 1 1
 
 
 ###Healing 
-execute at @a[predicate=effects_custom:has_spellbook_healing] run effect give @a[distance=..7, predicate=!colonel:has_regeneration] regeneration 5 2
-execute as @a[predicate=effects_custom:has_spellbook_healing, predicate=!colonel:has_hunger] run effect give @s hunger 10 30
-execute at @a[predicate=effects_custom:has_spellbook_healing, predicate=effects_custom:is_sneaking] run effect give @e[distance=..7, predicate=!colonel:has_regeneration, type=!player] regeneration 5 2
-execute as @e[predicate=effects_custom:is_ridden_by_healer, predicate=!colonel:has_regeneration] run effect give @s regeneration 5 2
+execute at @a[predicate=effects_custom:has_spellbook_healing] run effect give @a[distance=..7, predicate=!effects_custom:has_regeneration] regeneration 5 2
+execute as @a[predicate=effects_custom:has_spellbook_healing, predicate=!effects_custom:has_hunger] run effect give @s hunger 10 30
+execute at @a[predicate=effects_custom:has_spellbook_healing, predicate=effects_custom:is_sneaking] run effect give @e[distance=..7, predicate=!effects_custom:has_regeneration, type=!player] regeneration 5 2
+execute as @e[predicate=effects_custom:is_ridden_by_healer, predicate=!effects_custom:has_regeneration] run effect give @s regeneration 5 2
 execute at @a[predicate=effects_custom:has_spellbook_healing] run function effects_custom:healing_ring
 ###for testing:
 ###execute as @a[predicate=effects_custom:has_spellbook_healing] run say healing
@@ -82,13 +82,13 @@ execute as @a[predicate=effects_custom:has_spellbook_strength] run effect give @
 
 ###Hail_Of_Arrows
 execute as @a[predicate=effects_custom:has_spellbook_hail_of_arrows, predicate=effects_custom:is_sneaking] run function effects_custom:hail_of_arrows_ritual
-execute as @a[predicate=effects_custom:has_spellbook_hail_of_arrows, predicate=!colonel:is_sneaking] run scoreboard players set @s hail_of_arrows_ct 0
-###execute as @a[predicate=effects_custom:has_spellbook_hail_of_arrows, predicate=!colonel:is_sneaking] run execute at @s run execute as @e[type=armor_stand,tag=hail_of_arrows_ritual,distance=..2, limit=1, sort=nearest] run kill @s
+execute as @a[predicate=effects_custom:has_spellbook_hail_of_arrows, predicate=!effects_custom:is_sneaking] run scoreboard players set @s hail_of_arrows_ct 0
+###execute as @a[predicate=effects_custom:has_spellbook_hail_of_arrows, predicate=!effects_custom:is_sneaking] run execute at @s run execute as @e[type=armor_stand,tag=hail_of_arrows_ritual,distance=..2, limit=1, sort=nearest] run kill @s
 ###execute as @a[predicate=effects_custom:has_spellbook_hail_of_arrows, predicate=effects_custom:is_sneaking] run say hi
 
 
 ###Levitation
-execute as @a[predicate=effects_custom:has_spellbook_levitation, predicate=!colonel:holds_weapon, predicate=!colonel:heavy_armor, predicate=effects_custom:in_levitation_hight] run effect give @s levitation 1 1
+execute as @a[predicate=effects_custom:has_spellbook_levitation, predicate=!effects_custom:holds_weapon, predicate=!effects_custom:heavy_armor, predicate=effects_custom:in_levitation_hight] run effect give @s levitation 1 1
 
 
 ###Notch
@@ -97,9 +97,9 @@ execute as @a[predicate=effects_custom:has_spellbook_notch, predicate=effects_cu
 
 
 ###Regeneration
-execute as @a[predicate=effects_custom:has_spellbook_regeneration, predicate=!colonel:has_regeneration_three] run effect give @s regeneration 5 3
-execute as @a[predicate=effects_custom:has_spellbook_regeneration, predicate=!colonel:has_hunger] run effect give @s hunger 10 30
-execute as @a[predicate=effects_custom:has_spellbook_regeneration, predicate=!colonel:has_regeneration_four, predicate=effects_custom:is_sneaking] run effect give @s regeneration 5 4
+execute as @a[predicate=effects_custom:has_spellbook_regeneration, predicate=!effects_custom:has_regeneration_three] run effect give @s regeneration 5 3
+execute as @a[predicate=effects_custom:has_spellbook_regeneration, predicate=!effects_custom:has_hunger] run effect give @s hunger 10 30
+execute as @a[predicate=effects_custom:has_spellbook_regeneration, predicate=!effects_custom:has_regeneration_four, predicate=effects_custom:is_sneaking] run effect give @s regeneration 5 4
 
 
 ###Shield 
@@ -128,21 +128,21 @@ execute at @a[predicate=effects_custom:has_spellbook_teleportation, predicate=ef
 execute at @a[predicate=effects_custom:has_spellbook_teleportation, predicate=effects_custom:is_sneaking] run summon armor_stand ^ ^ ^20 {Invisible:1b, Tags:[teleport_point, ticklife], NoGravity:true}
 execute at @e[type=armor_stand, tag=teleport_point] run function effects_custom:teleport_point_pixel
 
-execute as @a[predicate=effects_custom:has_spellbook_teleportation, predicate=!colonel:is_sneaking, scores={teleport_charge=200..,teleport_ritual=1}] run execute at @s run tp @s ^ ^0.8 ^20 
-execute as @a[predicate=effects_custom:has_spellbook_teleportation, predicate=!colonel:is_sneaking, scores={teleport_charge=200..,teleport_ritual=1}] run scoreboard players remove @s teleport_charge 200
-execute as @a[predicate=effects_custom:has_spellbook_teleportation, scores={teleport_ritual=1..}, predicate=!colonel:is_sneaking] run scoreboard players set @s teleport_ritual 0
-execute as @a[predicate=!colonel:has_spellbook_teleportation, scores={teleport_ritual=1..}] run scoreboard players set @s teleport_ritual 0
+execute as @a[predicate=effects_custom:has_spellbook_teleportation, predicate=!effects_custom:is_sneaking, scores={teleport_charge=200..,teleport_ritual=1}] run execute at @s run tp @s ^ ^0.8 ^20 
+execute as @a[predicate=effects_custom:has_spellbook_teleportation, predicate=!effects_custom:is_sneaking, scores={teleport_charge=200..,teleport_ritual=1}] run scoreboard players remove @s teleport_charge 200
+execute as @a[predicate=effects_custom:has_spellbook_teleportation, scores={teleport_ritual=1..}, predicate=!effects_custom:is_sneaking] run scoreboard players set @s teleport_ritual 0
+execute as @a[predicate=!effects_custom:has_spellbook_teleportation, scores={teleport_ritual=1..}] run scoreboard players set @s teleport_ritual 0
 
-###execute as @a[predicate=!colonel:has_spellbook_teleportation, scores={teleport_charge=1..}] run scoreboard players set @s teleport_charge 0
+###execute as @a[predicate=!effects_custom:has_spellbook_teleportation, scores={teleport_charge=1..}] run scoreboard players set @s teleport_charge 0
 execute as @a[tag=has_teleport_running] run bossbar set teleport_charge0 players @a[scores={teleport_charge=0..199}]
 execute as @a[tag=has_teleport_running] run bossbar set teleport_charge1 players @a[scores={teleport_charge=200..399}]
 execute as @a[tag=has_teleport_running] run bossbar set teleport_charge2 players @a[scores={teleport_charge=400..599}]
 execute as @a[tag=has_teleport_running] run bossbar set teleport_charge3 players @a[predicate=effects_custom:has_spellbook_teleportation,scores={teleport_charge=600..}]
-execute as @a[predicate=!colonel:has_spellbook_teleportation, scores={teleport_charge=600}] run tag @s remove has_teleport_running
+execute as @a[predicate=!effects_custom:has_spellbook_teleportation, scores={teleport_charge=600}] run tag @s remove has_teleport_running
 
 
 ###Xray
-execute as @a[predicate=effects_custom:has_spellbook_xray,predicate=!colonel:has_haste] run function effects_custom:xray
+execute as @a[predicate=effects_custom:has_spellbook_xray,predicate=!effects_custom:has_haste] run function effects_custom:xray
 
 
 ###Magic_Missile
