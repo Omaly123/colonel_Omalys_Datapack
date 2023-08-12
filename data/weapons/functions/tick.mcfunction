@@ -13,7 +13,7 @@ execute as @a[scores={staff=1..,teleport_charge=200..,teleport_cd=..0},nbt={Sele
 execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{colonel_staff_of_teleportation:1b}}}] run bossbar set teleport_charge0 players @a[scores={teleport_charge=0..199}]
 execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{colonel_staff_of_teleportation:1b}}}] run bossbar set teleport_charge1 players @a[scores={teleport_charge=200..399}]
 execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{colonel_staff_of_teleportation:1b}}}] run bossbar set teleport_charge2 players @a[scores={teleport_charge=400..599}]
-execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{colonel_staff_of_teleportation:1b}}}] run bossbar set teleport_charge3 players @a[predicate=colonel:has_spellbook_teleportation,scores={teleport_charge=600..}]
+execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{colonel_staff_of_teleportation:1b}}}] run bossbar set teleport_charge3 players @a[predicate=effects_custom:has_spellbook_teleportation,scores={teleport_charge=600..}]
 execute as @a[scores={teleport_cd=1..}] run scoreboard players remove @s teleport_cd 1
 ###levitate
 execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{colonel_staff_of_levitate:1b}}}] anchored eyes positioned ^ ^ ^ run function effects_custom:levitate_raycast
