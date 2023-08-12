@@ -49,7 +49,7 @@ execute as @a[scores={teleport_cd=1..}] run scoreboard players remove @s telepor
 execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{colonel_staff_of_levitate:1b}}}] anchored eyes positioned ^ ^ ^ run function colonel:levitate_raycast
 ###Fireball
 execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{colonel_staff_of_fireball:1b}}}, scores={staff=1..,fireball_cd=0}] at @s run playsound entity.blaze.burn player @a ~ ~ ~
-execute at @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{colonel_staff_of_fireball:1b}}}, scores={staff=1..,fireball_cd=0}] run summon fireball ^ ^1 ^1 {ExplosionPower:3}
+execute at @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{colonel_staff_of_fireball:1b}}}, scores={staff=1..,fireball_cd=0}] run function madmaxi:summon_zombie
 execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{colonel_staff_of_fireball:1b}}}, scores={staff=1..,fireball_cd=0}] run say fireball!
 execute as @a[scores={fireball_cd=0..}] run bossbar set fireball_cd1 players @a[scores={fireball_cd=41..}]
 execute as @a[scores={fireball_cd=0..}] run bossbar set fireball_cd2 players @a[scores={fireball_cd=21..40}]
