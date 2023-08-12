@@ -19,6 +19,9 @@ execute as @e[tag=ticklife] run tag @s remove ticklife
 execute as @e[scores={lifetime=1..}] run scoreboard players operation @s lifetime -= #1 num
 execute as @e[scores={lifetime=0}] run kill @s
 
+###PLatform
+execute at @a[predicate=effects_custom:has_spellbook_buildplatform,scores={isMod=1}] run function effects_custom:build_platform
+
 ###Raycast
 execute as @e[tag=raycast] run execute at @s run tp ^ ^1 ^
 execute as @e[tag=raycast] run execute at @s run tp ^ ^1 ^
