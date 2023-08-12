@@ -1,0 +1,1 @@
+tellraw @a {"text": "effects", "color": "#139900"}
